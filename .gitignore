@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+
+# .env
+.env
+env/
+
+# Tools
+.ruff_cache/
+.pyright/
+
+# OS
+.DS_Store
