@@ -14,37 +14,10 @@ src/
         main.py
 ```
 
-## Requirements
-
-- Python >= 3.12
-
-## Installation
-
-1. Clone this repository:
-   ```bash
-   git clone <repository-url>
-   cd <project-directory>
-   ```
-
-2. Install dependencies using uv:
-   ```bash
-   uv sync
-   ```
-
-## Usage
-
-Run the main script:
-```bash
-uv run python -m my_project.main
-```
-
-This will execute the sample functions and print some output.
-
-## Development
-
 ### Code Quality
 
 This project uses:
+- Python >= 3.12
 - **basedpyright** for type checking
 - **ruff** for linting and formatting
 
