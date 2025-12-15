@@ -1,9 +1,9 @@
-.PHONY: basedpyright ruff lint
+.PHONY: lint typecheck check
 
-basedpyright:
-	uv run basedpyright
-
-ruff:
+lint:
 	uv run ruff check
 
-lint: ruff basedpyright
+typecheck:
+	uv run basedpyright
+
+check: typecheck lint
