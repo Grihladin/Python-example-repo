@@ -1,37 +1,23 @@
 # Example Python Project
 
-This is a simple example Python project that i can clone and use as a starting point for my projects.
+A minimal Python project template with type checking and linting configured.
 
-## Project Structure
+## Requirements
 
-```
-pyproject.toml
-.python-version
-README.md
-src/
-    example_project/
-        __init__.py
-        main.py
-```
+- Python 3.12+
+- [uv](https://github.com/astral-sh/uv)
 
-### Code Quality
+## Setup
 
-This project uses:
-- Python >= 3.12
-- **basedpyright** for type checking
-- **ruff** for linting and formatting
-
-Run type checking:
 ```bash
-uv run basedpyright
+uv sync --group dev
 ```
 
-Run linting:
-```bash
-uv run ruff check
-```
+## Development
 
-Format code:
 ```bash
-uv run ruff format
+make check          # Run all checks
+make typecheck      # Type checking with basedpyright
+make lint           # Lint with ruff
+uv run ruff format  # Format code
 ```
